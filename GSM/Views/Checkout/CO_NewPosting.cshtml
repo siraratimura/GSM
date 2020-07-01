@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewData["Title"] = "CO_NewPosting";
+}
+
+
+
+<div class="content-sticky-footer pt-0 px-3">
+
+    <div class="container mt-2 h-100 d-flex justify-content-center">
+        <div class="col-sm-2 col-md-2  p-0">
+            <a href="javascript:void(0)" onclick="window.history.back();"><i class="fas fa-long-arrow-alt-left fa-2x text-white"></i></a>
+        </div>
+
+        <div class="col-sm-11 col-md-8 p-0">
+            <div class="my-auto text-center">
+
+                <!-- xs -->
+                <p class="text-uppercase sp-3 text-white d-block d-sm-none m-0" style="font-size:14px;">new posting</p>
+                <!-- md -->
+                <h3 class="text-uppercase sp-3 text-white d-none d-md-block d-lg-none">new posting</h3>
+                <!-- lg -->
+                <h3 class="text-uppercase sp-3 text-white d-none d-lg-block d-xl-none">new posting</h3>
+                <!-- xl -->
+                <h3 class="text-uppercase sp-3 text-white  d-none d-xl-block">new posting</h3>
+
+
+            </div>
+        </div>
+
+        <div class="col-md-2  d-none d-sm-block"></div>
+    </div>
+
+    <div class="card bg-light container h-100 d-flex justify-content-center text-uppercase">
+
+        <div class="card-body p-1 pb-2">
+
+            <div class="card bg-dark mt-2">
+
+                <div class="card-body">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+
+                            <span class="dot text-center"><i class="fas fa-file-alt text-dark"></i></span>
+                            <a asp-controller="CheckOut" asp-action="CO_Folio">
+                                <button type="button" class="btn btn-info sp-2 mt-3">new Posting</button>
+                            </a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="description" class="sp-2 text-white font-weight-bold">description</label>
+                                    <input type="text" class="form-control" id="description"
+                                           placeholder="Description" value="mark check in change" />
+                                </div>
+
+                                <div class="col-md-6 mt-3">
+                                    <label for="reference" class="sp-2 text-white font-weight-bold">reference#</label>
+                                    <input type="text" class="form-control" id="reference"
+                                           placeholder="reference" value="1022" />
+                                </div>
+
+                                <div class="col-md-6 mt-3">
+                                    <label for="amount" class="sp-2 text-white font-weight-bold">amount</label>
+                                    <input type="text" class="form-control" id="amount"
+                                           placeholder="amount" value="2000" />
+                                </div>
+
+                                <div class="col-md-12 mt-3">
+                                    <label class="sp-2 text-white font-weight-bold">remark</label>
+                                    <textarea id="textarea" rows="3" cols="50" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="pm">
+                <table style="width:100%" class="mt-4">
+                    <tr>
+                        <th class="w-100px px-1 text-center">
+                            <span class="dot2 bg-gd-pp text-center"><i class="fas fa-file-alt text-white"></i></span>
+
+                            <p class="text-center">room charge <br>(ato post)</p>
+                        </th>
+
+                        <th class="w-100px px-1 border-left border-right text-center">
+                            <span class="dot2 bg-gd-pp text-center"><i class="fas fa-file-alt text-white"></i></span>
+
+                            <p class="text-center">room <br>misc.</p>
+                        </th>
+                        <th class="w-100px px-1 text-center">
+                            <span class="dot2 bg-gd-pp text-center"><i class="fas fa-file-alt text-white"></i></span>
+
+                            <p class="text-center">cancellation <br>charge</p>
+                        </th>
+                        <th class="w-100px px-1 border-left border-right text-center">
+                            <span class="dot2 bg-gd-pp text-center"><i class="fas fa-file-alt text-white"></i></span>
+
+                            <p class="text-center">room charge <br>(manual)</p>
+                        </th>
+
+                        <th class="w-100px px-1 text-center">
+                            <span class="dot2 bg-gd-pp text-center"><i class="fas fa-file-alt text-white"></i></span>
+
+                            <p class="text-center">early check <br> in charge</p>
+                        </th>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>

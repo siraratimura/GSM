@@ -1,0 +1,68 @@
+@using GSM.Models
+<div class="content-sticky-footer" id="Index" >
+
+    <div class="container mt-3 h-100 d-flex justify-content-center">
+        <div class="my-auto text-center">
+ 
+            <div class="display-3 my-2">
+                <img src="~/images/logo.png" class="w-25" />
+            </div>
+
+            <div class="text-uppercase header-more-h1 sp-5 my-2 text-white">express</div>
+
+            <h2 class="text-uppercase my-2 sp-4 text-white">service</h2>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-3 mb-auto h-100 d-flex justify-content-center">
+
+
+ 
+
+        <div class="col-md-5 col-sm-12 text-center " >
+            <a  onclick="$('#Page_CI_Identify').show(); $('#div_CI_Identify').show();  $('#Index').hide(); " >
+                <span class="dot" ><i class="fas fa-map-marker-alt gd-icon"></i></span>
+                <div class="mt-3"><h3 class="text-uppercase ">check-in</h3></div>
+            </a>
+        </div>
+
+
+        <div class="col-md-5 col-sm-12 text-center border-white border-l-2">
+            <a  asp-controller="CheckOut" asp-action="CO_Identify">
+                <span class="dot"><i style="color:#000000" class="fas fa-suitcase-rolling gd-icon"></i></span>
+                <div class="mt-3"><h3 class="text-uppercase ">check-out</h3></div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="Page_CI_Identify" style=" display: none;">
+
+
+    <partial name="CheckIn/CI_Identify" model="Model" />
+ 
+</div>
+
+
+<div id="Page_CO_Identify" style=" display: none;">
+
+
+    <partial name="CheckIn/CI_Identify" model="Model" />
+
+</div>
+
+<script>
+    function IndexClick() {
+
+
+
+
+    }
+
+
+</script>

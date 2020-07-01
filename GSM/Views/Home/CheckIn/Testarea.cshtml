@@ -1,0 +1,71 @@
+﻿
+
+
+<body style="background: #000000">
+    <!-- partial:index.partial.html -->
+    <!--form-content-->
+    <form id="form-id">
+        <!--Progressbar-->
+        <ul class='progress-step m-0 p-0 py-4'>
+            <li class="active"><span class="h6">Account Setup</span></li>
+            <li><span class="h6">Social Profiles</span></li>
+            <li><span class="h6">Personal Details</span></li>
+        </ul>
+        <!--Account Setup-->
+        <fieldset>
+            <h2 class='title'>Create your Account</h2>
+            <h3 class='sub-title'>Signup Information</h3>
+            <input type='email' name='email' placeholder='Email' />
+            <input type='password' name='passwrd' placeholder='Password' />
+            <input type='password' name='confirm-passwrd' placeholder='Confirm Password' />
+            <input type='button' name='next' class='next-button custom-button' value="Next" />
+        </fieldset>
+        <!--Social Profiles-->
+        <fieldset>
+            <h2 class='title'>Social Profiles</h2>
+            <h3 class='sub-title'>Presence on the Social Network</h3>
+            <input type='text' name='twitter' placeholder='Twitter' />
+            <input type='text' name='facebook' placeholder='Facebook' />
+            <input type='text' name='google-plus' placeholder='Google Plus' />
+            <input type='button' name='previous' class='prev-button custom-button' value="Back" />
+            <input type='button' name='next' class='next-button custom-button' value="Next" />
+        </fieldset>
+        <!--Personal Details-->
+        <fieldset>
+            <h2 class='title'>Personal Details</h2>
+            <h3 class='sub-title'>We will never sell it.</h3>
+            <input type='text' name='first-name' placeholder='First Name' />
+            <input type='text' name='last-name' placeholder='Last-Name' />
+            <input type='text' name='phone-no' placeholder='Phone No.' />
+            <input type='text' name='address' placeholder='Address' />
+            <input type='button' name='previous' class='prev-button custom-button' value="Back" />
+            <input type='button' name='next' class='next-button custom-button' value="Next" />
+        </fieldset>
+
+
+    </form>
+    <!-- partial -->
+  
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.next-button').click(function () {
+            var current = $(this).parent();
+            var next = $(this).parent().next();
+            $(".progress-step li").eq($("fieldset").index(next)).addClass("active");
+            current.hide();
+            next.show();
+        })
+
+        $('.prev-button').click(function () {
+            var current = $(this).parent();
+            var prev = $(this).parent().prev()
+            $(".progress-step li").eq($("fieldset").index(current)).removeClass("active");
+            current.hide();
+            prev.show();
+        })
+    })
+
+
+</script>

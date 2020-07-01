@@ -1,0 +1,196 @@
+﻿
+@{
+    ViewData["Title"] = "CI_Payment";
+
+
+}
+
+
+<div id="div_CI_Payment">
+    <header class="row m-0 fixed-header" style="position: sticky;">
+        <div class="left">
+            <!--  <a href="javascript:void(0)" class="menu-left"><i class="fas fa-arrow-left"></i></a>-->
+            <a onclick=" $('#div_CI_BookInfo').show();  $('#div_CI_Payment').hide(); "><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="col center">
+            <a href="#" class="logo">
+                <figure><i class="fas fa-utensils"></i></figure>
+                ROOM 002 <span class="pl-3"> </span>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="content-sticky-footer pt-0 px-3">
+
+
+
+        <div class="container mt-3 h-100 d-flex justify-content-center pb-2">
+
+            <div class="col-sm-2 col-md-2  p-0">
+
+            </div>
+
+            <div class="col-sm-11 col-md-8 p-0">
+                <div class="my-auto text-center">
+
+
+                </div>
+            </div>
+
+            <div class="col-md-2  d-none d-sm-block"></div>
+
+        </div>
+
+
+        <div class="card bg-light container h-100 d-flex justify-content-center text-uppercase">
+
+            <div class="card-body p-1 pb-3">
+
+                <div class="card bg-dark mt-2">
+                    <div class="card-body">
+                        <form class="text-white sp-2">
+                            <div class="border-bottom">
+                                <div>
+                                    <label><span class="font-weight-bold mr-3">name <i class="fas fa-file-signature"></i></span> <span>mark</span></label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label>
+                                            <span class="font-weight-bold mr-3">email <i class="far fa-envelope"></i></span> <span>markyoyo@gmail.com</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label>
+                                            <span class="font-weight-bold mr-3">phone <i class="fas fa-phone"></i></span> <span>080-123-4567</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 border-bottom">
+                                <div>
+                                    <label>
+
+
+                                        <span class="font-weight-bold mr-3">room rate <i class="fas fa-coins"></i></span> <span>1,250</span>
+                                    </label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label>
+                                            <span class="font-weight-bold mr-3">arrival</span> <span>21 jun 2020</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label>
+                                            <span class="font-weight-bold mr-3">departure</span> <span>21 jun 2020</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 pb-2 border-bottom">
+                                <div><label class="font-weight-bold">advance payment</label></div>
+
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            one night
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            whole period
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios3" value="option3">
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            none
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="border-bottom my-3"></div>
+
+        <div class="card bg-light container h-100 d-flex justify-content-center text-uppercase">
+
+            <div class="card-body p-1 pb-3">
+
+                <div class="card bg-dark mt-2">
+                    <div class="card-body">
+                        <form class="text-white sp-2 text-center">
+                            <div><label class="font-weight-bold h5 border-bottom py-2">advance payment</label></div>
+                            <h6 class="text-white sp-2">cash , credit card</h6>
+                        </form>
+
+                        <div class="pm">
+                            <table style="width:100%" class="mt-3">
+                                <tr>
+                                    <th class="w-100px px-1">
+                                        <a>
+                                            <img src="~/images/cash.png" class="w-100" data-toggle="modal"
+                                                 data-target="#cash_payment" />
+                                        </a>
+                                    </th>
+                                    <th class="w-100px px-1">
+                                        <img src="~/images/visa.png" class="w-100" data-toggle="modal"
+                                             data-target="#card_payment" />
+                                    </th>
+                                    <th class="w-100px px-1">
+                                        <img src="~/images/jcb.png" class="w-100" data-toggle="modal"
+                                             data-target="#delete_payment" />
+                                    </th>
+                                    <th class="w-100px px-1"><img src="~/images/mtc.png" class="w-100" /></th>
+                                    <th class="w-100px px-1"><img src="~/images/cdc.png" class="w-100" /></th>
+                                    <th class="w-100px px-1"><img src="~/images/ent.png" class="w-100" /></th>
+                                    <th class="w-100px px-1"><img src="~/images/aec.png" class="w-100" /></th>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <button type="button" class="mb-2 btn btn-success" data-toggle="modal"
+                    data-target="#ci_payment">
+                check in <i class="fas fa-map-marker-alt text-white"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+ 
