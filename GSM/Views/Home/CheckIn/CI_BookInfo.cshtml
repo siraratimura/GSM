@@ -99,109 +99,188 @@
                 </div>
 
 
+ 
+                    <div id="Card_bookInfo" class="col-12 mb-4 mt-4">
+                        <div class="row px-2">
 
-                <div id="Card_bookInfo" class="col-12 mb-4 mt-4">
-                    <div class="row px-2">
+
+                            @for (int i = 0; i < 3; i++)
+                            {
 
 
-                        @for (int i = 0; i < 3; i++)
-                        {
-                            <div class="col-md-4 col-lg-4 col-sm-6 p-2 ">
-                                <div class="card mb-3 " onclick="$('#Des_BookInfo').show(); $('#Card_bookInfo').hide();   $('#next_bookinfo').hide(); ">
-                                    <div class="card-body  p-0 px-3 pt-3">
-                                        <div class="ribbon ribbon-top-right d-none"><span>1</span></div>
-                                        <table class="w-100">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center"><img class="avatar w-100" src="~/images/user3.png" alt=""></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-menu">
-                                                            <h5>Hathairat in-ngam </h5>
-                                                            <h6>Guest</h6>
-                                                        </div>
-                                                    </td>
-                                                </tr>
 
-                                            </tbody>
-                                        </table>
+
+
+                                <div class="col-md-4 col-lg-4 col-sm-6 p-2 ">
+                                    <div class="card mb-3 " onclick="$('#Des_BookInfo').show(); $('#Card_bookInfo').hide();   $('#next_bookinfo').hide(); ">
+                                        <div class="card-body  p-0 px-3 pt-3">
+                                            <div class="ribbon ribbon-top-right d-none"><span>1</span></div>
+                                            <table class="w-100">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center"><img class="avatar w-100" style="border-radius: 10%; " src="~/images/user3.png" alt=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pt-2" >
+                                                                <h5>Hathairat in-ngam </h5>
+                                                                <h6>Guest</h6>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button class="btn btn-outline-light rounded mb-2" onclick="$('#Des_BookInfo').show(); $('#Card_bookinfo').hide(); $('#next_bookinfo').hide();">  More info  </button>
+                                        </div>
                                     </div>
-                                    <div class="card-footer">
-                                        <button class="btn btn-outline-light rounded mb-2" onclick="$('#Des_BookInfo').show(); $('#Card_bookinfo').hide(); $('#next_bookinfo').hide();">  More info  </button>
+                                </div>
+
+
+
+
+
+
+
+                            }
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                  
+
+                    <!-- card more info -->
+
+                    <div class="content-sticky-footer  " id="Des_BookInfo" style=" display: none; ">
+                        <div class="row mx-0 position-relative   mb-4">
+
+                            <div class="col">
+                                <a href="#" class="media">
+                                    <div class="w-auto h-100">
+                                        <figure class="avatar avatar-120"><img src="~/images/user1.png" alt=""> </figure>
+                                    </div>
+                                    <div class="media-body align-self-center ">
+                                        <h5><label><span>Mr.</span></label> <label><span>Sirarat </span></label>  <label><span>Imura </span></label>    </h5>
+                                        <p>
+                                            14 / 08 /2018 <span class="status-online bg-color-success"></span>
+                                            <br> Markyuyu@gmail.com
+                                            <br> 080-123-4567
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mx-2  mt-3">
+                            <div class="col-4 col-md-8"></div>
+
+
+                            <div class="col-4 col-md-2">
+                                <a href="javascript:void(0)" class="btn btn-info rounded mb-2" data-toggle="modal" data-target="#hireme">Edit <i class="fas fa-pen"></i></a>
+
+                            </div>
+
+                            <div class="col-4 col-md-2 ">
+                                <a onclick="$('#Des_BookInfo').hide(); $('#Card_bookInfo').show();   $('#next_bookinfo').show(); " class="btn btn-danger rounded mb-2" data-toggle="modal" data-target="#hireme">Cancel </a>
+
+                            </div>
+                        </div>
+
+
+                        <hr />
+                     
+                            <div class="row">
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">id/passpoart</h5>
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text">000-000-1234-000 </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">place of issue</h5>
+                                            <p class="card-text">xxx  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6  py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">issue</h5>
+                                            <p class="card-text">000-000  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6  py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> expire  </h5>
+                                            <p class="card-text">20/20/2020  </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <hr class="p-0" />
+                            <div class="row">
+
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">immigragtion</h5>
+                                            <p class="card-text">000-000-1234-000  </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">place of issue</h5>
+                                            <p class="card-text">xx </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">issue</h5>
+                                            <p class="card-text">20/20/2020  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 py-1 px-1">
+                                    <div class="card" style="border-left: 8px solid #3e2d65bf;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">expire</h5>
+                                            <p class="card-text">20/20/2020  </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        }
+
+ 
 
                     </div>
                 </div>
 
-
-
-                <!-- card more info -->
-
-                <div class="content-sticky-footer  " id="Des_BookInfo" style=" display: none; ">
-                    <div class="row mx-0 position-relative   mb-4">
-
-                        <div class="col">
-                            <a href="#" class="media">
-                                <div class="w-auto h-100">
-                                    <figure class="avatar avatar-120"><img src="~/images/user1.png" alt=""> </figure>
-                                </div>
-                                <div class="media-body align-self-center ">
-                                    <h5><label><span>Mr.</span></label> <label><span>Sirarat </span></label>  <label><span>Imura </span></label>    </h5>
-                                    <p>
-                                        14 / 08 /2018 <span class="status-online bg-color-success"></span>
-                                        <br> Markyuyu@gmail.com
-                                        <br> 080-123-4567
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mx-2  mt-3">
-                        <div class="col-4"></div>
-       
-
-                        <div class="col-4">
-                            <a href="javascript:void(0)" class="btn btn-outline-light rounded mb-2" data-toggle="modal" data-target="#hireme">Edit <i class="fas fa-pen"></i></a>
-
-                        </div>
-
-                        <div class="col-4  ">
-                            <a onclick="$('#Des_BookInfo').hide(); $('#Card_bookInfo').show();   $('#next_bookinfo').show(); " class="btn btn-outline-light rounded mb-2" data-toggle="modal" data-target="#hireme">Back </a>
-
-                        </div>
-                    </div>
-
-
-                    <div class="row mx-0 mt-2">
-                        <div class="col-6">
-                            <div> <h5><span class="text-uppercase">id/passpoart</span></h5> </div>
-                            <div> <h6><span class="text-uppercase">000-000-1234-000</span></h6> </div>
-
-                            <div> <h6><span class="text-uppercase">place of issue</span></h6> </div>
-                            <div> <h6><span class="text-uppercase">issue : 20/20/2020</span></h6> </div>
-                            <div> <h6><span class="text-uppercase">expire : 20/20/2020</span></h6> </div>
-
-                        </div>
-
-                        <div class="col-6">
-                            <div> <h5><span class="text-uppercase">immigragtion</span></h5> </div>
-                            <div> <h6><span class="text-uppercase">000-000-1234-000</span></h6> </div>
-
-                            <div> <h6><span class="text-uppercase"> place of issue</span></h6> </div>
-                            <div> <h6><span class="text-uppercase">issue : 20/20/2020</span></h6> </div>
-                            <div> <h6><span class="text-uppercase">expire : 20/20/2020</span></h6> </div>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
-
-        </div>
 
 
         <div class="row justify-content-center mt-2">
@@ -210,6 +289,7 @@
 
 
         </div>
+ 
 
     </div>
 
